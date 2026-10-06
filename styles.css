@@ -1,0 +1,419 @@
+@font-face {
+    font-family: neu;
+    src: url(font/NeueMachina-Light.woff2);
+}
+@font-face {
+    font-family:hal ;
+    src: url(font/Helvetica.ttf);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+#orange{
+    color: rgb(255, 128, 0);
+    font-weight: bold;
+    font-size: 23px;
+}
+#orange-bottom{
+    font-size:12px;
+    color: grey;
+}
+.nav1{
+    text-align: center;
+
+}
+.nav2{
+    display:flex;
+    gap: 20px;
+    
+}
+.nav2 h4{
+    color: grey;
+}
+.nav2 i{
+    font-size: 18px;
+}
+
+.section1{
+    background-color: aquamarine;
+    width: 100%;
+    height: 40vw;
+    background-image: url(image/Sunlit\ Family\ Backyard\ Portrait.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 45px;
+    display: flex;
+}
+.section1::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+
+}
+.section1 .left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    width: 40%;
+    padding: 20px 30px;
+}
+.section1 .left h1{
+    position: relative;
+    color: white;
+    z-index: 1;
+    font-size:30px;
+    font-family:neu;
+}
+.section1 .left h5{
+    color: rgb(200, 193, 193);
+    z-index:1;
+    font-size: 10px;
+    position: relative;
+    padding-top:20px;
+}
+.section1 .left button{
+    color: white;
+    border: none;
+    background-color:rgb(255, 128, 0);
+    font-family: hal;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    font-weight: 100;
+    padding: 10px 20px;
+}
+.section2{
+     padding: 15px 30px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ 
+    
+}
+
+.section2 .right img{
+width:40vw;
+}
+.section2 .left {
+    width: 40%;
+     font-family: neu;
+}
+.section2 .left h2{
+    font-size: 50px;
+}
+.section2 .left h5{
+    font-family: neu;
+    padding-top: 15px;
+    color: grey;
+    font-size: 20px;
+}
+.section2 .left button{
+    background-color: rgb(145, 139, 139);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+
+}
+.section3{
+    background-color:#111828;
+    color: white;
+    padding: 135px 140px;
+    text-align: center;
+
+}
+.section3 h5{
+    color: gray;
+    padding-top: 10px;
+}
+.section3 h3{
+    font-family: neu;
+    width: 80%;
+    margin: auto;
+    font-size: 3vw;
+}
+.section4{
+        margin-top: 30px;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.section4 h2{
+    font-family: neu;
+}
+.section4 img{
+      width: 25vw;
+    height: 310px;
+}
+
+.section4 p{
+     width:300px;
+     font-size: 12px;
+     font-family: hal;
+     color: gray;
+}
+.section4 button{
+       background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px; 
+}
+.section5{
+    margin-top: 50px;
+    padding: 15px 30px;
+    background-color: #111828;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+}
+.section5 h3{
+    font-family:neu;
+    font-size: 2.5vw;
+}
+.section5 p{
+    font-family:neu;
+     font-size: 1.vw;
+
+}
+.section5 .left{
+    padding: 0px 34px;
+}
+.section5 .right{
+    padding: 20px 30px;
+    width: 60%;
+    max-width: 40%;
+    font-weight: 100;
+}
+.section5 .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 20px;
+   
+}
+label{
+    font-family: hal;
+   
+}
+.section5 textarea{
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    resize: vertical;
+    background-color:#18202D;
+    margin-top: 5px;
+    
+}
+input[type=text]{
+    background-color:#18202D;
+      margin-top: 5px;
+      border: 1px solid grey;
+      width: 100%;
+      padding: 10px 30px;
+}
+input[type=email]{
+    background-color:#18202D;
+    margin-top: 5px;
+    border: 1px solid grey;
+    width: 100%;
+          padding: 10px 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+.nav3{
+    display: flex;
+    gap: 20px;
+    display: none;
+    align-items: center;
+}
+
+.nav3 i{
+    font-size: 18px;
+}
+@media (max-width:600px) {
+    .nav3{
+        display:flex;
+    }
+    .nav2{
+        display: none;
+    }
+    #orange{
+    font-size: 15px;
+    }
+    #orange-bottom{
+    font-size:7px;
+    color: grey;
+    }
+
+.section1{
+    background-color: aquamarine;
+    width: 100%;
+    height: 40vw;
+    margin-bottom: 20px;
+
+
+}
+
+.section1 .left{
+    width: 60%;
+    padding: 0px 30px;
+}
+.section1 .left h1{
+    font-size:15px;
+
+}
+.section1 .left h5{
+    font-size: 5px;
+    padding-top:10px;
+}
+.section1 .left button{
+    margin-top: 8px;
+    font-weight: 500;
+    padding: 5px 8px;
+}
+.section2{
+    .left h2{
+        font-size: 28px;
+        width: 100%;
+    }
+}
+
+
+.section2{
+    padding: 40px 30px;
+}
+.section2 .left h5{
+
+    font-size: 8px;
+}
+.section2 .left button{
+    background-color: rgb(228, 83, 83);
+    color: white;
+    padding: 4px 5px;
+
+}
+.section2 .right img{
+width:40vw;
+}
+.section3{
+    padding: 60px 15px;
+}
+.section3 h5{
+    font-size: 12px;
+    padding-top: 10px;
+}
+.section3 h3{
+    font-size: 15px;
+    font-weight:500;
+}
+.section4{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+}
+.section4 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.section4 img{
+      width: 100%;
+      height: 250px;
+}
+
+.section4 p{
+     width:100%;
+}
+.section4 h2{
+   font-size: 20px;
+   color: rgb(245, 117, 19);
+}
+.section4 button{
+    background-color: rgb(21, 105, 24);
+    padding: 5px 10px;
+    color: white;
+    margin-top: 0;
+}
+
+.section5{
+    flex-direction: column;
+}
+.section5 h3{
+    text-align: center;
+    font-size: 25px;
+}
+.section5 p{
+    padding-top: 10px;
+     font-size: 15px;
+    text-align: center;
+}
+.section5 .left{
+    padding: 0px 34px;
+}
+.section5 .right{
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 100;
+}
+.section5 .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+   
+}
+label{
+    font-family: hal;
+    font-size: 15px;
+   
+}
+.section5 textarea{
+
+    height: 100px;
+    resize: vertical;
+    color: white;
+}
+input[type=text]{
+
+      border: 1px solid grey;
+      padding: 10px 30px;
+      color: white;
+}
+input[type=email]{
+
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: center;
+}
+}
